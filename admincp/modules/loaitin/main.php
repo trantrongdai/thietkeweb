@@ -1,0 +1,13 @@
+<?php
+	if(isset($_GET['ac'])){
+	$_ac=$_GET['ac'];
+	}else{
+		$_ac="";
+	}
+	if($_ac=="sua"){
+		include("modules/loaitin/sua.php");
+	}else{
+		include("modules/loaitin/them.php");
+	}
+		include("modules/loaitin/lietke.php");
+ ?>
