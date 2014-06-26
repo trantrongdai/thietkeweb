@@ -7,11 +7,7 @@
 	$idloaitin =$_POST["idloaitin"];
 	$trangthai =$_POST["trangthai"];
 	$thutu     =$_POST["thutu"];
-	if(isset($_GET["id"])){
 	$id = $_GET["id"];
-	}else{
-		$id="";
-	}
 
 	if(isset($_POST["them"])){
 
@@ -22,10 +18,7 @@
 		header("location: ../../index.php?quanly=baiviet&ac=them");
 
 	}else if(isset($_POST["sua"])) {
-		$sql="UPDATE baiviet SET tenbaiviet='$tenbaiviet',anhminhhoa='$anhminhhoa',tomtat='$tomtat',noidung='$noidung',
-		idloaitin='$idloaitin',trangthai='$trangthai',thutu='$thutu' where idbaiviet='$id'";
-		mysql_query($sql);
-		header("location: ../../index.php?quanly=baiviet&ac=sua&id=".$id);
+		//code for sua
 	}else{
 
 		$sql="delete from  baiviet where idbaiviet= '$id'";
