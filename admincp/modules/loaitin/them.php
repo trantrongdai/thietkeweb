@@ -15,10 +15,11 @@
   </tr>
   <tr>
     <td height="44">Trạng thái</td>
-    <td colspan="2"><select name="trangthai" id="trangthai">
-      <option value="Hiển thị" selected="selected">Hiển thị</option>
-      <option value="Không hiển thị">Không hiển thị</option>
-    </select></td>
+    <td colspan="2"><label for="trangthai"></label>
+      <select name="trangthai" id="trangthai">
+        <option value="Hiển thị" selected="selected">Hiển thị</option>
+        <option value="Không hiển thị">Không hiển thị</option>
+      </select></td>
   </tr>
   <tr>
     <td height="35">&nbsp;</td>
