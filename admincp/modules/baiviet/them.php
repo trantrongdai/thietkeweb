@@ -1,11 +1,11 @@
 <form  action="modules/baiviet/xuly.php" method="post">
 <div class="left">
-<table width="225" border="0">
+<table width="300" border="0">
   <tr>
     <td colspan="3"><div align="center"><strong>CHỨC NĂNG THÊM MỚI BÀI VIẾT</strong></div></td>
   </tr>
   <tr>
-    <td width="75">Tên bài viết</td>
+    <td width="91">Tên bài viết</td>
     <td colspan="2"><label for="tenbaiviet"></label>
       <input type="text" name="tenbaiviet" id="tenbaiviet" /></td>
   </tr>
@@ -45,10 +45,10 @@
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td width="67">
+    <td width="75">
       <input type="submit" name="them" id="them" value="  Thêm  " />
     </td>
-    <td width="97">
+    <td width="120">
       <input type="reset" name="xoa" id="xoa" value="  Xóa  " />
     </td>
   </tr>
