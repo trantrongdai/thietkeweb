@@ -21,7 +21,7 @@ body{
 }
 #content{
 	background-color:#E9E9E9;
-	height:500px;
+	height:auto;
 	width:87%;
 	float:right;
 }
@@ -53,10 +53,10 @@ div#menu a:hover{
 
 }
 div.left{
-	width:29.5%;
+	width:49.5%;
 	float:left;
 }
 div.right{
-	width:69.5%;
+	width:49.5%;
 	float:right;
 }
