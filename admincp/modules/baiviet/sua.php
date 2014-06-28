@@ -22,21 +22,18 @@
   </tr>
   <tr>
     <td>Ảnh minh họa</td>
-    <td colspan="2"><label for="anhminhhoa"></label>
-      <label for="anhminhhoa2"></label>
-      <input type="file" name="anhminhhoa" id="anhminhhoa2" /></td>
+    <td colspan="2">
+      <input type="file" name="anhminhhoa" id="anhminhhoa" value="<?php echo $dong["anhminhhoa"] ?>"/></td>
   </tr>
   <tr>
     <td>Tóm tắt</td>
-    <td colspan="2"><label for="tomtat"></label>
-      <label for="tomtat2"></label>
-      <textarea name="tomtat" id="tomtat2" cols="45" rows="5" value="<?php echo $dong["tomtat"] ?>"></textarea></td>
+    <td colspan="2">
+      <textarea name="tomtat" id="tomtat" cols="45" rows="5" value="<?php echo $dong["tomtat"] ?>"></textarea></td>
   </tr>
   <tr>
     <td>Nội dung</td>
-    <td colspan="2"><label for="noidung"></label>
-      <label for="noidung2"></label>
-      <textarea name="noidung" id="noidung2" cols="45" rows="10" value="<?php echo $dong["noidung"] ?>"></textarea></td>
+    <td colspan="2">
+      <textarea name="noidung" id="noidung" cols="45" rows="10" value="<?php echo $dong["noidung"] ?>"></textarea></td>
   </tr>
   <tr>
     <td>Loại tin</td>

@@ -12,26 +12,35 @@
   </tr>
   <tr>
     <td>Ảnh minh họa</td>
-    <td colspan="2"><label for="anhminhhoa"></label>
-      <label for="anhminhhoa2"></label>
-      <input type="file" name="anhminhhoa" id="anhminhhoa2" /></td>
+    <td colspan="2">
+      <input type="file" name="anhminhhoa" id="anhminhhoa" /></td>
   </tr>
   <tr>
     <td>Tóm tắt</td>
-    <td colspan="2"><label for="tomtat"></label>
-      <label for="tomtat2"></label>
-      <textarea name="tomtat2" id="tomtat2" cols="45" rows="5"></textarea></td>
+    <td colspan="2">
+      <textarea name="tomtat" id="tomtat" cols="45" rows="5"></textarea></td>
   </tr>
   <tr>
     <td>Nội dung</td>
-    <td colspan="2"><label for="noidung"></label>
-      <label for="noidung2"></label>
-      <textarea name="noidung" id="noidung2" cols="45" rows="10"></textarea></td>
+    <td colspan="2">
+      <textarea name="noidung" id="noidung" cols="45" rows="10"></textarea></td>
   </tr>
   <tr>
     <td>Loại tin</td>
-    <td colspan="2"><label for="idloaitin"></label>
-      <input type="text" name="idloaitin" id="idloaitin" /></td>
+    <?php $sql="select * from loaitin";
+          $loaitin=mysql_query($sql);
+    ?>
+    <td>
+      <select name="loaitin" id="loaitin">
+      <?php
+          while($dong_loaitin=mysql_fetch_array($loaitin)){
+       ?>
+        <option value="<?php echo  $dong_loaitin["idloaitin"] ?>"><?php echo $dong_loaitin["tenloaitin"] ?></option>
+      <?php 
+        }
+       ?>
+      </select>
+    </td>
   </tr>
   <tr>
     <td>Trạng thái</td>

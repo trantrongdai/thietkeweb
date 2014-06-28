@@ -27,7 +27,7 @@
   <tr class="doimaunen">
     <td height="33"><?php echo $i; ?></td>
     <td><?php echo $dong["tenbaiviet"] ;?></td>
-    <td><?php echo $dong["anhminhhoa"]; ?></td>
+    
     <td><?php echo $dong["idloaitin"]; ?></td>
     <td><?php echo $dong["trangthai"]; ?></td>
     <td><?php echo $dong["thutu"];?></td>
@@ -48,7 +48,7 @@
     <tr >
     <td height="33"><?php echo $i; ?></td>
     <td><?php echo $dong["tenbaiviet"] ;?></td>
-    <td><?php echo $dong["anhminhhoa"]; ?></td>
+  
     <td><?php echo $dong["idloaitin"]; ?></td>
     <td><?php echo $dong["trangthai"]; ?></td>
     <td><?php echo $dong["thutu"];?></td>

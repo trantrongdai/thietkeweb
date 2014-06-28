@@ -14,12 +14,22 @@
 	}
 
 	if(isset($_POST["them"])){
-
+		//Thực hiện thêm dữ liệu
+		$tenanh=$_FILES["anhminhhoa"]["name"];
+		if($tenanh!=""){
+			$time=date("Ymdhis");
+			$tenanh=$time.$tenanh;
+			$dich="../../../uploads/".$tenanh;
+			copy($_FILES["anhminhhoa"]["tmp_name"],$dich);
+			$dich=substr($dich,9);
+			
 		$sql="insert into baiviet(tenbaiviet,anhminhhoa,tomtat,noidung,idloaitin,trangthai,thutu)
-		values('$tenbaiviet','$anhminhhoa','$tomtat','$noidung','$idloaitin','$trangthai','$thutu')";
+		values('$tenbaiviet','$dich','$tomtat','$noidung','$idloaitin','$trangthai','$thutu')";
 		mysql_query($sql);
 
 		header("location: ../../index.php?quanly=baiviet&ac=them");
+		}
+
 
 	}else if(isset($_POST["sua"])) {
 		$sql="UPDATE baiviet SET tenbaiviet='$tenbaiviet',anhminhhoa='$anhminhhoa',tomtat='$tomtat',noidung='$noidung',
