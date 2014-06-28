@@ -10,7 +10,7 @@
  ?>
 <form action="modules/loaitin/xuly.php?id=<?php echo $dong["idloaitin"] ?>" method="post">
     <div class="left">
-    <table width="300" border="0">
+    <table width="349" border="0">
       <tr>
         <td height="33" colspan="3"><div align="center"><strong>CHỨC NĂNG SỬA LOẠI TIN</strong></div></td>
       </tr>
@@ -43,7 +43,7 @@
       <tr>
         <td height="35">&nbsp;</td>
         <td width="77"><input type="submit" name="sua" id="sua" value="  Sửa  " /></td>
-        <td width="120"><input type="reset" name="xoa" id="xoa" value="  Xóa  " /></td>
+        <td width="169"><input type="reset" name="xoa" id="xoa" value="  Xóa  " /></td>
       </tr>
     </table>
     </div>
